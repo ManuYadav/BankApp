@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Main Savings Inc. - README FILE</title>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<meta name="robots" content="none" />
+	<meta name="author" content="Mohamed Mansour" />
+	<meta name="Keywords" content="University of Bank System" />
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="_includes/base.css" title="Default" />
+	<!-- 
+	DESIGN COPYWRITED BY m0|interactive, Mohamed Mansour 2005
+	 -->
+</head>
+
+<body>
+
+<div id="container" class="isBackImg">
+
+	<div id="header">
+		<div id="subbar">
+			<p>Welcome Instructor</p>
+		</div>	
+	</div>
+
+	<div id="nav">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#arc">Architecture</a></li>
+			<li><a href="#des">Design</a></li>
+			<li><a href="#code">Code</a></li>
+			<li><a href="#db">Database</a></li>
+			<li><a href="#inst">Installation</a></li>
+			<li><a href="doc/index.html">JAVA Docs</a></li>
+			<li><a href="#screen">SCREENSHOT</a></li>
+		</ul>
+	</div>
+
+	<div id="main">
+		<h1>Quick Intro</h1>
+		<p>Mohamed Mansour - 2911834 (section A)</p>
+		<p>Aha Remember to look to at my custom made blogger that explains breifly about this project! </p>
+		<p><a href="http://www.m0interactive.com/portfolio/java/j2ee_online_banking_web_application/">http://www.m0interactive.com/portfolio/java/j2ee_online_banking_web_application/</a></p>
+
+		<h1>Theory</h1>
+			
+			<h2 id="arc">Architecture <a href="#container">^</a></h2>
+			<p> J2EE applications are best developed using the Model-View-Controller  (MVC) application model, which consists of the following three elements:</p>
+			
+            <table border="1" cellpadding="3" cellspacing="1">
+              <tbody>
+                <tr>
+                  <th scope="col" align="left" bgcolor="#eeeeee" valign="bottom"><p>Element</p></th>
+                  <th scope="col" align="left" bgcolor="#eeeeee" valign="bottom"><p>Description</p></th>
+                </tr>
+                <tr>
+                  <td scope="row" align="left" valign="top"><p>Model</p></td>
+                  <td align="left" valign="top"><p>Represents the application data and the business rules that manage  the data. In J2EE applications, the model is typically represented by EJBs.</p></td>
+                </tr>
+                <tr>
+                  <td scope="row" align="left" valign="top"><p>View</p></td>
+                  <td align="left" valign="top"><p>Renders the content of the model to the user of the application. In J2EE applications, the view is typically provided by JSP pages.</p></td>
+                </tr>
+                <tr>
+                  <td scope="row" align="left" valign="top"><p>Controller</p></td>
+                  <td align="left" valign="top"><p>Defines how the application works. It maps user actions (such as  button clicks) to operations performed by the model (such as updating  information in a database). The controller mediates between the view  and the model.</p>
+                  <p>In J2EE applications, the controller is typically a servlet, JavaBean, or session bean.</p></td>
+                </tr>
+              </tbody>
+            </table>
+            <p>Using the MVC architecture, we separated the data, display, and  flow of an application, allowing for greater flexibility and ease of  reuse. MVC is also was a very good way to develop applications that support  multiple presentations of the same data. As you can see we change the style of each page with ease.</p>
+			
+            <h2 id="des">Website Layout and Design <a href="#container">^</a></h2>
+<p>The overall layout was using the latest technology that includes XHTML, CSS 2.0, using some DOM for the AJAX development. The reason why such technology was used is because web standards in web design are the most important criteria to look at. The stats in table 1 show the different stats among the users who browse online. It is clearly an issue these days of how really a webpage looks like among all these browsers.</p>
+<p>The answer really, is that each browser has its own way to render html pages. Therefore don’t be sure the webpage that runs in Internet Explorer will look the same as Netscape. Internet Explorer is known to be poor at rendering. So a web designer should be aware to use Web standards to construct pages. Web standards allow much joy in a webpage, your webpage will look at its best in every device (PALM/PDA/BROWSERS/Ect.). </p>
+<img src="_includes/table.jpg" alt="table shown values" />
+<p>This site is designed using the web standard approach. It validates the W3C test and is Bobby A approved. Tools were used to prove this outcome! The HTML structure was using XHTML Strict 1.0 template, and by making a structural XHTML design, it allows the flexibility in our overall design. By changing 1 file, the whole website look will change completely! </p>
+
+<p>We have included a custom built JavaScript style chooser which demonstrates this point. By selecting your style of your choice, the whole website template changes!</p>
+
+<h2 id="code">Programming Design and Structure <a href="#container">^</a></h2>
+<p>The overall programming was developed using 3-tier architecture. We have a Model View Controller ( MVC ) ideology in using Enterprise Java Beans as our development tool. Ideally speaking this is the best approach into building webpage’s. </p>
+<img src="_includes/j2ee.jpg" alt="table shown values" />
+<p>The reason being, we have separated the data, design, and logic into different machines.  If a person wants to change his database from using PostgreSQL to MySQL, only one variable needs to be changed and the whole website will still have the same functionality.</p>
+<p>We have used a package modular approach for the decouplization of components. That allowed us for reusability and flexibility in the future. </p>
+<p>The following is the package structure of the Main Savings Inc.</p>
+<img src="_includes/system.jpg" alt="table shown values" />
+<p>We jave used Java beans and servlets and JSP for our core implementations. The servlets follow the action pattern and the database follows the data access object pattern. We have used templating and other sort of usefull techniques.</p>
+		
+<h2 id="db">Database Structure <a href="#container">^</a></h2>
+ <h3>The current database was originally 18 tables, we added 3 extra tables: </h3>
+    <p><strong>Payee</strong> - Was added to let the bank be control of the payees relevant to the bill payment. So the employees of the bank are allowed to add differnt payee information so that the user can add them to his account for future bill payments. </p>
+    <p><strong>Customer Payee</strong> - The customer payee table is just a relationship. Whenever a customer adds a payee to his account, this table maps the relationship between the customer and the payee, making it a many to many relationship. </p>
+    <p ><strong>Holds </strong> - We included this to tell which account is which, withought that, there are no representation to tell which account type is for which user.      </p>
+	
+    <h3>We added 3 Procedures into the database which were called: </h3>
+    <p><strong>payBill(AMOUNT,ACCOUNT,PAYEE,CUSTOMER,DATE);</strong></p>
+    <p>By entering the given parameters the funtion checks many stuff if money is availble, user is availble else throws an exception. This function calls another function which is updateAccount</p>
+	<pre class="code">
+CREATE FUNCTION payBill(NUMERIC,INTEGER,INTEGER,INTEGER,DATE) RETURNS INTEGER AS '
+	DECLARE v_desc VARCHAR;
+	DECLARE v_payee VARCHAR; 
+	DECLARE v_remaining NUMERIC;
+	DECLARE v_amount NUMERIC;
+	BEGIN
+		IF ($1 < 0 ) THEN
+			RAISE EXCEPTION ''% cannot have negative amount'', $1;
+		END IF;
+		
+		v_amount := -1 * $1;
+		IF v_overdraft IS NULL THEN
+			v_overdraft := 0;
+		END IF;
+		
+		SELECT (amount-abs($1)) INTO v_remaining FROM account WHERE account=$2;
+		SELECT payee INTO v_payee FROM payee WHERE pid=$3;
+		
+		v_desc := ''Bill payment - '' || v_payee;
+		
+		IF (v_remaining < 0) THEN
+			RAISE EXCEPTION ''Insuffient funds, % does not exist in your account'', $1;
+		END IF;
+		
+		INSERT INTO bill(pid,date,account,cid,amount) 
+			VALUES($3,current_date,$2,$4,$1);
+		
+		INSERT INTO activity(descr,account,cid,date,rem_bal,amount) 
+			VALUES(v_desc,$2,$4,$5,v_remaining,v_amount);
+
+		PERFORM updateaccount($2,v_amount);
+	RETURN 0;
+END;' LANGUAGE plpgsql;
+	</pre>
+    <p> 
+      <strong>updateAccount(ACCOUNT,AMOUNT)</strong></p>
+	  <p>This function just updates the amount field in the Account table, used from the other two functions.</p>
+    <pre class="code">
+CREATE FUNCTION updateAccount(INTEGER,NUMERIC) RETURNS INTEGER AS '
+	BEGIN
+		IF $2 IS NULL THEN
+			RAISE EXCEPTION ''% cannot have null amount'', $2;
+		END IF;
+		IF ($2 < 0) THEN
+	        IF (SELECT true
+	        	FROM account	        	
+	        	WHERE account=$2
+	        	AND amount < abs($2))
+	       THEN
+	            RAISE EXCEPTION ''% not enough money'', $2;
+	       END IF;
+        END IF;
+		UPDATE account SET amount=amount+$2 WHERE account=$1;
+	RETURN 0;
+END;' LANGUAGE plpgsql;
+</pre>
+    <p><strong>transferMoney(AMOUNT,ACCOUNTFROM,ACCOUNTTO,CUSTOMER);</strong></p>
+    <p>Transfers the money from one account to an other calls the updateAccount function to update the amount, extensive error checking consists as well</p>
+<pre class="code">
+CREATE FUNCTION transferMoney(NUMERIC,INTEGER,INTEGER,INTEGER) RETURNS INTEGER AS '
+	DECLARE v_desc VARCHAR;
+	DECLARE v_remaining NUMERIC;
+	DECLARE v_amount NUMERIC;
+	BEGIN
+		IF ($1 < 0 ) THEN
+			RAISE EXCEPTION ''% cannot have negative amount'', $1;
+		END IF;
+
+		-- INSERT MONEY TO THE TO
+		v_amount := -1 * $1;
+		SELECT (amount-abs($1)) INTO v_remaining FROM account WHERE account=$2;
+		v_desc := ''Transfer to - '' || to_char($3,'000000000000');
+		
+		IF (v_remaining < 0) THEN
+			RAISE EXCEPTION ''Insuffient funds, % does not exist in your account'', $1;
+		END IF;
+		
+		INSERT INTO activity(descr,account,cid,date,rem_bal,amount) 
+			VALUES(v_desc,$2,$4,current_date,v_remaining,v_amount);
+			
+		PERFORM updateaccount($2,v_amount);
+		
+		-- INSERT MONEY TO THE FROM
+		SELECT (amount+abs($1)) INTO v_remaining FROM account WHERE account=$3;
+		
+		IF (v_remaining < 0) THEN
+			RAISE EXCEPTION ''Insuffient funds, % does not exist in your account'', $1;
+		END IF;
+		
+		v_desc := ''Transfer from - '' || to_char($2,'000000000000');
+		
+		INSERT INTO activity(descr,account,cid,date,rem_bal,amount) 
+			VALUES(v_desc,$3,$4,current_date,v_remaining,$1);
+			
+		PERFORM updateaccount($3,$1);
+		
+	RETURN 0;
+END;' LANGUAGE plpgsql;
+</pre>
+
+<h1 id="inst">Installation <a href="#container">^</a></h1>
+<p>Previous knowledge of J2EE programming is needed.</p>
+<p>Run the sql scripts <a href="sql/bank.sql">bank.sql</a> and the <a href="sql/bank_populate.sql">bank-populate.sql </a> </p>
+<p>Package the Web Application </p>
+<p>Deploy the application</p>
+<p>Run by visiting ( http://localhost:8080/Bank/ ) Assuming that is your host and port. Account: 1 Password: 111</p>
+<div id="note">
+
+<h1 id="screen">Screehshots <a href="#container">^</a></h1>
+<p>Login:</p>
+<img src="_includes/msi_1.png" alt="msi">
+<p>View Accounts:</p>
+<img src="_includes/msi_2.png" alt="msi">
+<p>View Accounts Different Style (by changing the style dropdown simple :), full screen):</p>
+<img src="_includes/msi_2a.png" alt="msi">
+<p>View Details of a specific Account</p>
+<img src="_includes/msi_3.png" alt="msi">
+<p>Add a Payee</p>
+<img src="_includes/msi_4.png" alt="msi">
+<p>Pay a Bill, successful!</p>
+<img src="_includes/msi_5.png" alt="msi">
+<p>Transfer Money to an account, transfer error</p>
+<img src="_includes/msi_6.png" alt="msi">
+<p>Alter Profile, fields error</p>
+<img src="_includes/msi_7.png" alt="msi">
+
+<p>Notes </p>	 
+<ul>
+	<li>This is a readme file.</li>
+	<li>All activity is NOT logged.</li>
+</ul>
+</div>
+
+	</div>
+	<div id="footer">
+		<span>Copyright &copy; 2005 <a href="http://www.m0interactive.com">m0 | interactive</a>. All code and content is copyrighted to Mohamed Mansour. All rights reserved. Page loaded in 0.0 seconds, using 0 query(s)!</span>
+
+		<span> Also: <a href="http://validator.w3.org/check?uri=referer" title="Valid XHTML!">XHTML</a>, <a href="http://jigsaw.w3.org/css-validator/check/referer" title="Valid CSS!">CSS</a>, <a href="http://www.contentquality.com/mynewtester/cynthia.exe?Url1=http://m0.myftp.org:35456/Bank/" title="Valid Content Accessibility Report!">508</a></span>
+	</div>
+</div>
+</body>
+</html>

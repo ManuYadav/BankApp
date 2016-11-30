@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Packaging Generator" default="_packaging_generation_">
+<target name="_packaging_generation_" depends="N65540"/>
+<target name="N65540" description="Bank.war">
+<jar destfile="Bank.war">
+<zipfileset dir="web/WEB-INF" prefix="WEB-INF">
+<include name="web.xml"/>
+</zipfileset>
+<zipfileset dir="bin" prefix="WEB-INF/classes" includes="**/*.class"/>
+<zipfileset dir="web/docroot" includes="*.*"/>
+<zipfileset dir="web/docroot/css" prefix="css" includes="*.css"/>
+<zipfileset dir="web/docroot/images" prefix="images" includes="*.*"/>
+<zipfileset dir="web/docroot/javascript" prefix="javascript" includes="*.js"/>
+<zipfileset dir="web/docroot/images/modern" prefix="images/modern" includes="*.*"/>
+<zipfileset dir="web/docroot/images/stylist" prefix="images/stylist" includes="*.*"/>
+</jar>
+</target>
+</project>

@@ -1,0 +1,8 @@
+bankapp.bean.account
+bankapp.bean.authentication
+bankapp.bean.errorhandling
+bankapp.database
+bankapp.exception
+bankapp.listeners
+bankapp.utils
+bankapp.web

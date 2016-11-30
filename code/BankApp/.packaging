@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurations>
+<archive destination="" exploded="false" name="Bank.war" used="true">
+<file location="web/WEB-INF/web.xml" name="web.xml" prefix="WEB-INF" project="" projectLocation="web/WEB-INF/web.xml" used="true"/>
+<folder excludes="" includes="**/*.class" location="bin" name="bin" prefix="WEB-INF/classes" project="" projectLocation="/bin" used="true"/>
+<folder excludes="" includes="*.*" location="web/docroot" name="docroot" prefix="" project="" projectLocation="web/docroot" used="true"/>
+<folder excludes="" includes="*.css" location="web/docroot/css" name="css" prefix="css" project="" projectLocation="web/docroot/css" used="true"/>
+<folder excludes="" includes="*.*" location="web/docroot/images" name="images" prefix="images" project="" projectLocation="web/docroot/images" used="true"/>
+<folder excludes="" includes="*.js" location="web/docroot/javascript" name="javascript" prefix="javascript" project="" projectLocation="web/docroot/javascript" used="true"/>
+<folder excludes="" includes="*.*" location="web/docroot/images/modern" name="modern" prefix="images/modern" project="" projectLocation="web/docroot/images/modern" used="true"/>
+<folder excludes="" includes="*.*" location="web/docroot/images/stylist" name="stylist" prefix="images/stylist" project="" projectLocation="web/docroot/images/stylist" used="true"/>
+</archive>
+</configurations>
