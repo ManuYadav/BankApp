@@ -2,8 +2,8 @@
 * Using Normal Notation For specific Form Validation
 * current page its catching
 *
-* @author Mohamed Mansour ALL RIGHTS RESERVED www.m0interactive.com
-* @date November 27th, 2005
+* @author Manu Yadav
+* @date November 30th, 2016
 */
 
 /**

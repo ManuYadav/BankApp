@@ -1,6 +1,6 @@
 /***********************************************
  Fool-Proof Date Input Script with DHTML Calendar
- by Jason Moon - calendar@moonscript.com
+ by Manu Yadav
  ************************************************/
 
 // Customizable variables

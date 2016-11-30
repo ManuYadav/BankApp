@@ -12,6 +12,17 @@ import bankapp.bean.errorhandling.ErrorHandling;
 import bankapp.database.EmployeeDB;
 import bankapp.exception.UserNotFoundException;
 
+/**
+ * 
+ * Banking Application
+ *
+ * @file EmployeeServlet.java
+ * @package bankapp.web
+ * @author Manu Yadav
+ * @date 30-Nov-2016
+ *
+ */
+
 public class EmployeeServlet extends HttpServlet {
 	
 

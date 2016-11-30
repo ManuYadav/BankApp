@@ -3,14 +3,12 @@ package bankapp.exception;
 
 /**
  * 
- * CSI3317_PROJECT
+ * Banking Application
  *
  * @file DateException.java
  * @package bankapp.exception
- * @author Mohamed Mansour @2005
- * @email m0.interactive@gmail.com
- * @web www.m0interactive.com
- * @date 9-Dec-2005
+ * @author Manu Yadav
+ * @date 30-Nov-2016
  *
  */
 public class DateException extends Exception {

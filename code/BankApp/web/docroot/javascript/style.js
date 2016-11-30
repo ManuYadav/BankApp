@@ -1,6 +1,6 @@
 /*
-* Mohamed Mansour
-* 2005
+* Manu Yadav
+* 2016
 * NOTE for Gecko Active Browsers ONLY
 */
 

@@ -25,7 +25,7 @@ if(logged != null && module == "") module = "HOME";
 	<title>Main Savings Inc.</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 	<meta name="robots" content="none" />
-	<meta name="author" content="Mohamed Mansour" />
+	<meta name="author" content="Manu Yadav" />
 	<meta name="keywords" content="University of Ottawa Blog System" />
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 	<link rel="stylesheet" type="text/css" href="/Bank/css/base.css" title="Default" />
@@ -38,7 +38,7 @@ if(logged != null && module == "") module = "HOME";
 	<script type="text/javascript" src="/Bank/javascript/calendarDateInput.js"></script>
 	<script type="text/javascript" src="/Bank/javascript/style.js"></script>
 	<!-- 
-	DESIGN COPYWRITED BY m0|interactive, Mohamed Mansour 2005
+	DESIGN COPYWRITED BY Manu Yadav
 	 -->
 </head>
 

@@ -6,15 +6,14 @@ import bankapp.database.EmployeeDB;
 
 /**
  * 
- * CSI3317_PROJECT
- * 	Responsible database connection object from the servlet context
+ * Banking Application
+ * 
+ * Responsible database connection object from the servlet context
  *
  * @file ContextListener.java
  * @package bankapp.listeners
- * @author Mohamed Mansour @2005
- * @email m0.interactive@gmail.com
- * @web www.m0interactive.com
- * @date 9-Dec-2005
+ * @author Manu Yadav
+ * @date 30-Nov-2016
  *
  */
 public final class ContextListener

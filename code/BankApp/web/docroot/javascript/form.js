@@ -1,7 +1,7 @@
 /*
 * On click, it redirects to the page
 *
-* @author Mohamed Mansour <www.m0interactive.com>
+* @author Manu Yadav
 *
 */
 function jumpToPage(redirect,selectedField,restore){ 

@@ -8,14 +8,12 @@ import java.text.SimpleDateFormat;
 
 /**
  * 
- * CSI3317_PROJECT
+ * Banking Application
  *
  * @file BillAccountDetails.java
  * @package bankapp.bean.account
- * @author Mohamed Mansour @2005
- * @email m0.interactive@gmail.com
- * @web www.m0interactive.com
- * @date 9-Dec-2005
+ * @author Manu Yadav
+ * @date 30-Nov-2016
  *
  */
 public class TransferAccountDetails {
