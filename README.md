@@ -7,3 +7,4 @@ The application is to memic a real time Banking system with a well defined user 
 
 # Application stack
 We are going to use the standard J2EE enterprise application stack.
+For starters we are going to use Java, JSP/Servlets, Oracle DB, Weblogic, Linux, Docker, Github
